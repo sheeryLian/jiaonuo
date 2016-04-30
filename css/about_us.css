@@ -1,0 +1,230 @@
+.left{float: left;}
+
+.right{float:right;}
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+
+body{
+	background-color: #FFF;
+}
+
+.wrapper{
+	width: 1200px;
+	margin:0 auto;
+}
+/*顶部层*/
+#header{
+	width: 100%;
+	height: 111px;
+	background-color: #0079c1;
+}
+
+#header .wrapper{
+	position: relative;
+}
+
+.wrapper .logo{
+	position: absolute;
+	left: 6px;
+	top: 0;
+	z-index: 1;
+}
+
+.nav .nav{
+	width: 600px;
+	height: 111px;
+}
+
+.nav li{
+	float: left;
+	border-left: 1px solid #3394cd;
+	margin: 45px 0;
+}
+
+.nav .cur{
+	border-left: none; 
+}
+
+.nav li a{
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color: #FFF;
+	margin: 0 27px;
+}
+
+.nav li .first{
+	margin-left: 0;
+}
+
+.nav li .last{
+	margin-right: 0;
+}
+
+/*onmouseover到时候可以用jQuery写*/
+.nav a:hover{
+	font-weight: bold;
+	border-bottom: 4px solid #FFF; 
+}
+
+/*展示内容*/
+#banner{
+	width: 100%;
+	min-width: 1200px;
+	height: 276px;
+	background: #000;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+}
+
+#banner .ban4{
+	width: 1920px;
+	height: 276px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -960px;
+}
+
+/*主体内容*/
+#mainbody{
+	margin-top: 56px;
+}
+
+#mainbody .nav1 .fl_a{
+	display: block;
+	width: 276px;
+	height: 56px;
+	margin-top: 8px;
+	background: #F0F0F0;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	line-height: 56px;
+	text-align: center;
+	color: #00162d;
+}
+#mainbody .nav1 li{
+	position: relative;
+}
+#mainbody .nav1 li .nav2{
+	position: absolute;
+	top: 0;
+	left: 100%;
+}
+
+#mainbody .nav1 .cur{
+	background: #0085cb;
+	color: #FFF;
+	margin-top: 0;
+}
+
+/*onmouseover效果*/
+#mainbody .nav1 li:hover .fl_a{
+	background: #0085cb;
+	color: #FFF;
+}
+
+#mainbody .nav1 li:hover .nav2{
+	display: block;
+}
+
+#mainbody .nav2{
+	display: none;
+}
+
+#mainbody .nav2 img{
+	position: absolute;
+	top: 16px;
+	left: -30px;
+}
+
+#mainbody .nav2 .menu{
+	background: #0085cb;
+	width: 500px;
+	padding: 5px 30px 15px 30px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+#mainbody .nav1 .nav2 .menu .title{
+	font-size: 18px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	color: #fff;
+	line-height: 47px;
+}
+
+#mainbody .nav1 .nav2 .menu p{
+	width: 500px;
+	height: 1px;
+	background: #4daadb;
+}
+
+#mainbody .nav1 .nav2 .menu .fr_a{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #fff;
+	float: left;
+	margin: 10px 25px 10px 0;
+}
+
+/*二级菜单onmouseover效果*/
+#mainbody .nav1 .nav2 .menu a:hover{
+	text-decoration: underline;
+}
+
+/*主体内容：右*/
+#mainbody .fr{
+	width: 800px;
+}
+
+#mainbody .fr .fr_title i{
+	display: block;
+	width: 8px;
+	height: 36px;
+	background: #0085cb;
+}
+
+#mainbody .fr .fr_title span{
+	display: block;
+	font-size: 30px;
+	color: #0085cb;
+	font-weight: bold;
+	line-height: 35px;
+	margin-left: 22px;
+}
+
+#mainbody .fr .fr_conter{
+	margin-top: 30px;
+}
+
+#mainbody .fr .fr_conter .fl{
+	width: 440px;
+	line-height: 28px;
+	font-size: 16px;
+}
+
+#mainbody .fr .fr_conter .fr{
+	width: 320px;
+}
+
+#mainbody .fr .fr_conter .fr .bottom{
+	font-size: 14px;
+	line-height: 25px;
+}
+
+/*底部内容*/
+#footer{
+	background: #00162d;
+	height: 60px;
+	margin-top: 78px;
+}
+
+#footer span{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #28a8cf;
+	line-height: 60px;
+}
